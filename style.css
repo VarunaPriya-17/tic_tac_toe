@@ -1,0 +1,98 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #e8e8e8;
+    text-align: center;
+    font-style: italic;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+h1 {
+    color: #000000;
+    font-size: 70px;
+    font-weight: bold;
+    font-style: italic;
+}
+.theme{
+    font-size: 30px;
+}
+
+.game-mode{
+    line-height: 10px;
+}
+
+/* Game board and cell styling */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 8px;
+    margin: 30px auto;
+    margin-left: 35px;
+}
+
+.cell {
+    background-color: #d1d0d0;
+    border: 2px solid #242424;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+/* Controls and buttons */
+.controls {
+    margin-top: 20px;
+}
+
+#status {
+    font-size: 18px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-style: italic;
+}
+
+/* Theme-specific styles */
+body.light {
+    background-color:rgb(228, 240, 250);
+    color: #000000;
+}
+
+body.dark {
+    background-color: #535353;
+    color: #ffffff;
+}
+
+body.colorful {
+    background: linear-gradient(135deg, #ff9966, #66ffcc ,skyblue);
+    color: #000000;
+}
+
+/* Leaderboard styling */
+.leaderboard {
+    margin-top: 20px;
+}
+
+.leaderboard ul {
+    list-style: none;
+    padding: 0;
+}
+
+.leaderboard li {
+    background-color:white;
+    color: black;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
