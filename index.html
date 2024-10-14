@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic-Tac-Toc</h1>
+        
+        <!-- Theme Selection -->
+        <div class="theme-selector">
+            <label for="theme" style="font-size: 25px;">Choose a Theme:</label>
+            <select id="theme" style="padding: 5px; font-size: 15px;"><br>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="colorful">Colorful</option>
+            </select>
+        </div><br>
+
+        <!-- Game Mode Selection -->
+        <div class="game-mode">
+            <button id="vsPlayer" style="border-radius: 2px;padding: 15px;width: 50%;">Two Player Mode..</button><br><br>
+            <button id="vsAI" style="border-radius: 2px;padding: 15px;width: 40%;">Play Against AI..</button>
+        </div>
+
+        <!-- Game Board -->
+        <div class="game-board" id="gameBoard">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+
+        <!-- Game Controls -->
+        <div class="controls">
+            <p id="status"></p>
+            <button id="restartBtn" style="border-radius: 2px;">Restart Game</button>
+        </div>
+
+        <!-- Leaderboard -->
+        <div class="leaderboard">
+            <h2>Leaderboard</h2>
+            <ul id="leaderboardList"></ul>
+        </div>
+    </div>
+    <!-- Leaderboard Section with Delete Buttons -->
+    <div class="leaderboard">
+        <ul id="leaderboardList"></ul>
+
+    <!-- New Buttons for Deleting Leaderboard Entries -->
+    <button id="deleteLastEntry">Delete Last Entry</button>
+    <button id="deleteAllEntries">Delete All Entries</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
